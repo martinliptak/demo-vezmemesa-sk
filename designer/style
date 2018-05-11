@@ -1,0 +1,13 @@
+$('#themer .content').html("<ul class=\"themes\">\n      <li class=\"active\"  data-style=\"pink_shine\" \n      		title=\"Pink Shine\">\n            <a href=\"/designer/style?style=pink_shine\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Pink Shine\">\n                <div><img alt=\"Pink_shine\" src=\"/assets/front/elegance/pink_shine-1aa1de4be9d3539f841550557b6b9cbb.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\"  data-style=\"popularity\" \n      		title=\"Popularity\">\n            <a href=\"/designer/style?style=popularity\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Popularity\">\n                <div><img alt=\"Popularity\" src=\"/assets/front/elegance/popularity-34ef48ace12c2c542b6cccf2eeb07278.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\"  data-style=\"green_belt\" \n      		title=\"Green Belt\">\n            <a href=\"/designer/style?style=green_belt\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Green Belt\">\n                <div><img alt=\"Green_belt\" src=\"/assets/front/elegance/green_belt-70e426fafef992eefe383f3d0dc70c98.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\"  data-style=\"pink_yoghurt\" \n      		title=\"Pink Yoghurt\">\n            <a href=\"/designer/style?style=pink_yoghurt\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Pink Yoghurt\">\n                <div><img alt=\"Pink_yoghurt\" src=\"/assets/front/elegance/pink_yoghurt-0de25d2da9b4e159afde8981eb2c080a.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\"  data-style=\"green_frost\" \n      		title=\"Green Frost\">\n            <a href=\"/designer/style?style=green_frost\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Green Frost\">\n                <div><img alt=\"Green_frost\" src=\"/assets/front/elegance/green_frost-7414d72b5033a9195ecc726cd8997525.png\" /><\/div>\n<\/a>      <\/li>\n<\/ul>");
+
+$('#themer .menu li').removeClass('active');
+$('#themer .menu li[data-type="style"]').addClass('active');
+
+$('#themer .themes').jcarousel({
+    scroll: 4,
+    buttonPrevHTML: '<div class="arrow" title="Predchádzajúce"></div>',
+    buttonNextHTML: '<div class="arrow right" title="Ďalšie"></div>',
+    start: 1
+});
+
+$('#themer .themes').show();

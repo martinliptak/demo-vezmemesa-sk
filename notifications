@@ -1,0 +1,10 @@
+$("#notifications-container").append("<div id=\"notifications-popup\">\n        Zatiaľ nie sú žiadne upozornenia.\n    <div id=\"notifications-popup-arrow\"><\/div>\n<\/div>");
+$("#notifications-container .notice").html('')
+
+$('html').click(function () {
+    $("#notifications-popup").remove();
+});
+
+$("#notifications-popup").click(function (event) {
+    event.stopPropagation();
+});

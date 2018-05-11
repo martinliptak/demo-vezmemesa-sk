@@ -1,0 +1,13 @@
+$('#themer .content').html("<ul class=\"themes\">\n      <li class=\"\" data-layout=\"infinity\" \n      		title=\"Infinity\">\n            <a href=\"/designer/layout?layout=infinity\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Infinity\">\n                <div><img alt=\"Olive\" src=\"/assets/front/infinity/olive-5ada6f1c85ac95ace55982bd4709826e.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\" data-layout=\"silk\" \n      		title=\"Silk\">\n            <a href=\"/designer/layout?layout=silk\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Silk\">\n                <div><img alt=\"Wooden\" src=\"/assets/front/silk/wooden-eab43c165089197276a67e99daf179c6.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\" data-layout=\"modern\" \n      		title=\"Modern\">\n            <a href=\"/designer/layout?layout=modern\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Modern\">\n                <div><img alt=\"Purple\" src=\"/assets/front/modern/purple-f074eca0e47bb4c9f1084cae48a7978d.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\" data-layout=\"dream\" \n      		title=\"Dream\">\n            <a href=\"/designer/layout?layout=dream\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Dream\">\n                <div><img alt=\"Blue\" src=\"/assets/front/dream/blue-5d1cc706b2e5378de15eff693bcc68bb.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"active\" data-layout=\"elegance\" \n      		title=\"Elegance\">\n            <a href=\"/designer/layout?layout=elegance\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Elegance\">\n                <div><img alt=\"Pink_shine\" src=\"/assets/front/elegance/pink_shine-1aa1de4be9d3539f841550557b6b9cbb.png\" /><\/div>\n<\/a>      <\/li>\n      <li class=\"\" data-layout=\"poetry\" \n      		title=\"Poetry\">\n            <a href=\"/designer/layout?layout=poetry\" data-method=\"put\" data-remote=\"true\" rel=\"nofollow\" title=\"Poetry\">\n                <div><img alt=\"Green\" src=\"/assets/front/poetry/green-06d6187afa2bf5242bb7c4f603aa244d.png\" /><\/div>\n<\/a>      <\/li>\n<\/ul>");
+
+$('#themer .menu li').removeClass('active');
+$('#themer .menu li[data-type="layout"]').addClass('active');
+
+$('#themer .themes').jcarousel({
+    scroll: 4,
+    buttonPrevHTML: '<div class="arrow" title="Predchádzajúce"></div>',
+    buttonNextHTML: '<div class="arrow right" title="Ďalšie"></div>', 
+    start: 5
+});
+
+$('#themer .themes').show();
